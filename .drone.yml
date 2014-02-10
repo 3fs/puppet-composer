@@ -1,0 +1,9 @@
+image: ruby1.9.3
+script:
+  - gem install puppet-lint
+  - puppet-line
+notify:
+  email:
+    recipients:
+      - igor.ajdisek@3fs.si
+      - david@3fs.si
