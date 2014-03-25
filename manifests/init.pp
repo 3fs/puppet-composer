@@ -35,6 +35,7 @@ class composer (
       require     => File['/usr/local/bin/composer'],
       refreshonly => true,
       subscribe   => Exec[ 'store composer.json' ],
+      timeout     => 0,
     }
   }
 }
